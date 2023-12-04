@@ -23,5 +23,79 @@
     </ul>
   </nav>
 </div>
+<section id="first" class="gridOne">
+    <div class="first-text">
+      <h2>Web Developer<br />& Mobile Developer</h2>
+      <p class="pOne">
+        I possess extensive expertise in developing web and mobile applications across a wide range of frameworks and technologies.</p>
+      <a href="#bio" class="button">View my work</a>
+    </div>
+    <div class="first-img">
+      <img src="assets/me.jpg" alt="pic of planet">
+    </div>
+  </section>
+  <section id="bio">
+    <h3>My Showcase Projects</h3>
+    <div class="projectsOne gridOne">
+      <a href="#">
+        <img src="assets/banking.jpg" alt="banking app">
+        <h4>Java Banking System</h4>
+      </a>
+      <a href="#">
+        <img src="assets/jeopardy.png" alt="jeopardy game">
+        <h4>Jeopardy Javascript Game</h4>
+      </a>
+      <a href="#">
+        <img src="assets/privacy.jpg" alt="privacy mobile app">
+        <h4>Privacy Flutter Mobile App</h4>
+      </a>
+    </div>
+  </section>
+  <section id="skillsOne">
+    <h3>Programming Languages</h3>
+    <ul class="gridOne">
+      <li>
+        <img src="assets/js.png" alt="js">
+        <h4>JavaScript</h4>
+      </li>
+      <li>
+        <img src="assets/html.png" alt="html">
+        <h4>HTML</h4>
+      </li>
+      <li>
+        <img src="assets/css.png" alt="css">
+        <h4>CSS</h4>
+      </li>
+      <li>
+        <img src="assets/flutter.png" alt="flutter">
+        <h4>Flutter</h4>
+      </li>
+    </ul>
+    <p class="pOne">These are some of the programming lanugages I have considerable expertise in!</p>
+  </section>
+  <footer>
+    <div class="gridOne">
+      <p class="copyright">Copyright 2023 Shahryar Salim</p>
+      <ul class="social">
+        <li><a href="#"><img src="assets/icon_fb.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="assets/icon_tw.svg" alt="twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    function toggleNavbar() {
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarLinks.classList.toggle('active');
+    }
+    const currentLocation = window.location.href;
+
+const navbarLinks = document.querySelectorAll('.navbar-links a');
+
+navbarLinks.forEach(link => {
+  if (link.href === currentLocation) {
+    link.classList.add('active');
+  }
+});
+  </script>
 </body>
 </html>
