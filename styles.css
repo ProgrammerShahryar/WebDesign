@@ -71,3 +71,130 @@
     overflow-x: hidden;
     font-family: 'Rubik Regular';
   }
+  @keyframes pButton {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .button{
+    animation: pButton 1s infinite;
+    background: none;
+    border: 2px solid var(--firstColor);
+    color: var(--firstColor);
+    padding: 6px 12px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+    display: inline-block;
+    font-size: 1em;
+  }
+  .button:hover{
+    color: #222;
+    background: var(--firstColor);
+  }
+  input,textarea{
+    background: rgba(255,255,255,0.05);
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 2px solid #ff0095;
+    color: #f2f2f2;
+    font-size: 1em;
+  }
+  
+  @font-face {
+    font-family: 'Rubik Regular';
+    src: url("assets/fonts/Rubik-Regular.ttf") format("ttf"),
+  }
+  h1,h2,h3,h4{
+    color: #DDDBFF;
+    font-weight: normal;
+    line-height: 1.4em;
+  }
+  p,a,li{
+    color: #b8b8b8;
+    font-weight: bolder;
+    line-height: 1.4em;
+    font-size: 1em;
+  }
+  .ad{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 30px;
+    border-bottom: 3px solid var(--firstColor);
+  
+  }
+  @keyframes dissapear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  h1 {
+    animation: dissapear 1s ease; 
+  }
+  h1, h3{
+    font-size: 1.2em;
+  }
+  h2{
+    font-size: 1.6em;
+  }
+  h4{
+    font-size: 1.1em;
+  }
+  .pOne{
+    font-size: 1.1em;
+  }
+  
+  .gridOne{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+  }
+  #first{
+    align-items: center;
+    padding: 0 20px 20px 20px;
+  }
+  .first-text{
+    transition: margin 0.3s ease;
+    grid-column: 1/6;
+  }
+  .first-text:hover {
+    margin-bottom: 30px; 
+  }
+  
+  .first-text a{
+    margin: 20px 0;
+  }
+  .first-img{
+    grid-column: 6/9;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+  }
+  .first-img img{
+    width: 100%;
+  }
+  #bio{
+    background: url(assets/square.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    filter: brightness(70%);
+    padding: 30px 20px;
+  }
+  #bio h3{
+    color: #ffffff;
+    margin-bottom: 0;
+    font-weight: bolder;
+    text-align: center;
+  }
