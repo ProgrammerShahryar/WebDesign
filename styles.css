@@ -198,3 +198,93 @@
     font-weight: bolder;
     text-align: center;
   }
+  .projectsOne{
+    margin: 20px 0;
+  }
+  .projectsOne a{
+    grid-column: 1/9;
+    display: flex;
+    margin: 20px 0
+  }
+  .projectsOne a *{
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+  }
+  .projectsOne a img {
+    transition: transform 0.3s ease; 
+  }
+  .projectsOne a img:hover {
+    transform: scale(1.05); 
+  }
+  .projectsOne h4{
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  #skillsOne{
+    padding: 30px 20px;
+    background: rgb(63, 11, 11);
+  }
+  #skillsOne h3{
+    text-align: center;
+    color: #b8b8b8;
+    font-weight: bolder;
+  }
+  #skillsOne ul{
+    margin: 40px 0;
+  }
+  #skillsOne li{
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    grid-column: span 4;
+    text-align: center;
+  }
+  #skillsOne img{
+    height: 80px;
+    margin: 10px auto;
+  }
+  #skillsOne p{
+    text-align: center;
+    margin: 0 20px;
+    color: #b8b8b8;
+    font-weight: bolder;
+  }
+  #contactOne{
+    padding: 30px 20px;
+    background: rgb(71, 27, 27);
+  }
+  #contactOne h3, #contactOne p{
+    margin-bottom: 0;
+    text-align: center;
+  }
+  #contactOne form{
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  #contactOne input,#contactOne textarea{
+    width: 100%;
+    margin: 10px 0;
+  }
+  #contactOne textarea{
+    max-width: 100%;
+    height: 200px;
+  }
+  #contactOne .button{
+    margin-top: 10px;
+  }
+  .gender-selection {
+    color: white;
+  }
+  
+  .gender-selection label {
+    display: inline-block;
+    margin-right: 10px; 
+  }
+  
+  .gender-selection input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer; 
+  }
