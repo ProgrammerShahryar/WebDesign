@@ -311,3 +311,59 @@
   footer img{
     width: 20px;
   }
+  @media screen and (min-width: 620px){
+    .navbar {
+      justify-content: none;
+      align-items: start;
+      padding: 20px 40px;
+    }
+  
+    .navbar-toggle {
+      display: none;
+    }
+  
+    .navbar-links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    .navbar-links li {
+      margin: 0 15px;
+    }
+    .first-text{
+      grid-column: 1/5;
+    }
+    .first-img{
+      grid-column: 5/9;
+    }
+    .first-img img{
+      width: 100%;
+    }
+    .projectsOne{
+      margin-top: 40px;
+    }
+    .projectsOne a{
+      grid-column: span 4;
+      display: block;
+      margin: 20px 0;
+    }
+    .projectsOne a:last-child{
+      grid-column: 3/7;
+    }
+    .projectsOne a *{
+      margin: 10px;
+      max-width: 60%;
+      margin: 10px 20%;
+    }
+    .projectsOne h4{
+      text-align: center;
+    }
+    #skillsOne{
+      padding: 30px 100px;
+    }
+    footer{
+      background-size: 20%;
+    }
+  
+  }
