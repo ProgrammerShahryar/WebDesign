@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="contact us, contact, help, information, web development, mobile development, JavaScript, HTML, CSS, Flutter, portfolio">
+  <meta name="description" content="Explore Shahryar's portfolio showcasing expertise in web and mobile development. View projects and skills in JavaScript, HTML, CSS, and Flutter.">
+  <link rel="stylesheet" href="styles.css">
+  <title>Shahryar's Portfolio</title>
+</head>
+<body>
+  <div class="st">
+  <div class="ad"><h1>Shahryar's Portfolio</h1></div>
+  <nav class="navbar">
+    <div class="navbar-toggle" onclick="toggleNavbar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</div>
+  
+  <section id="contactOne">
+    <h3>Contact Us</h3>
+    <p class="pOne">Fill in the required information</p>
+    <form action="#" method="post">
+      <input type="text" placeholder='Full Name' required>
+      <input type="email" placeholder='Email' required>
+      <input type="text" placeholder='Address' required>
+      <input type="tel" placeholder='Phone Number' required>
+      <div class="gender-selection">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+      <textarea placeholder='Message' required></textarea>
+      <button class="button">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <div class="gridOne">
+      <p class="copyright">Copyright 2023 Shahryar Salim</p>
+      <ul class="social">
+        <li><a href="#"><img src="assets/icon_fb.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="assets/icon_tw.svg" alt="twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    function toggleNavbar() {
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarLinks.classList.toggle('active');
+    }
+    const currentLocation = window.location.href;
+
+const navbarLinks = document.querySelectorAll('.navbar-links a');
+
+navbarLinks.forEach(link => {
+  if (link.href === currentLocation) {
+    link.classList.add('active');
+  }
+});
+  </script>
+</body>
+</html>
